@@ -7,25 +7,30 @@ using System.IO;
 [Serializable]
 public class DataOverview
 {
-    public List<confirmed> confirmed;
-    public List<locationlist> location;
-
-}
-
-[Serializable]
-public class confirmed
-{
     public int latest;
     public List<Location> locations;
+
 }
 
+
 [Serializable]
-public class locationlist
+public class Coordinates
 {
+    public string lat;
+    public string @long;
+}
+
+
+
+
+[Serializable]
+public class Location
+{
+    public List<Coordinates> coordinates;
     public string country;
+    //public History history { get; set; }
     public int latest;
     public string province;
 }
-
 
 

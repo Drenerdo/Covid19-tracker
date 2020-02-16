@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -26,7 +27,7 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    public IEnumerator Get(string url)
+    public IEnumerator Get(string url, object getData)
     {
         using(UnityWebRequest www = UnityWebRequest.Get(url))
         {
@@ -42,10 +43,9 @@ public class DataManager : MonoBehaviour
                 {
                     string jsonResult = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
 
-                    //DataOverview dataOverview = JsonUtility.FromJson<DataOverview>(jsonResult);
+                    DataOverview dataOverview = JsonUtility.FromJson<DataOverview>(jsonResult);
 
-                    ConfirmedCases confirmedCases = JsonUtility.FromJson<ConfirmedCases>(jsonResult);
-
+                    //Debug.Log(dataOverview.confirmed);
 
                     Debug.Log(jsonResult);
                 }
