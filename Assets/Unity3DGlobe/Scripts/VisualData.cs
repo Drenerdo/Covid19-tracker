@@ -20,6 +20,8 @@ public class VisualData : MonoBehaviour
         if (_www.error == null)
         {
             parsingData(_www.text);
+            parsingCasualtyData(_www.text);
+
         }
         else
         {
@@ -33,17 +35,23 @@ public class VisualData : MonoBehaviour
         Debug.Log(dataOverview.latest);
         //Debug.Log(dataOverview.location);
 
+        Debug.Log(dataOverview.locations);
+
+        //Debug.LogError(dataOverview.deaths);
+
         foreach (Location l in dataOverview.locations)
         {
-            Debug.LogError("Parsing through this!");
+            //Debug.LogError("Parsing through this!");
             Debug.Log(l.latest);
             Debug.Log(l.country);
             Debug.Log(l.province);
         }
 
-        //foreach(confirmed c in dataOverview.confirmed)
-        //{
-        //    Debug.Log(c.latest);
-        //}
+    }
+
+    void parsingCasualtyData(string _url)
+    {
+        CasualtyData casualtyData = JsonUtility.FromJson<CasualtyData>(_url);
+
     }
 }
