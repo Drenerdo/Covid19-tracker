@@ -71,6 +71,7 @@
     <Compile Include="Assets\Unity3DGlobe\Scripts\DataLoader.cs" />
     <Compile Include="Assets\Unity3DGlobe\Scripts\DataVisualizer.cs" />
     <Compile Include="Assets\Unity3DGlobe\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Unity3DGlobe\Scripts\VisualData.cs" />
     <None Include="Assets\Unity3DGlobe\Shaders\UnlitVertexColor.shader" />
     <None Include="Assets\Unity3DGlobe\Shaders\EarthShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
