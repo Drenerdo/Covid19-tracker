@@ -3,9 +3,9 @@
     <Files>
       <File FileName="Assets/Scripts/DataManager.cs" Line="48" Column="23" />
       <File FileName="Assets/Scripts/DataVisualizer.cs" />
-      <File FileName="Assets/Unity3DGlobe/Scripts/DataVisualizer.cs" Line="5" Column="1" />
-      <File FileName="Assets/Unity3DGlobe/Scripts/DataLoader.cs" Line="22" Column="33" />
-      <File FileName="Assets/Unity3DGlobe/Scripts/VisualData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Unity3DGlobe/Scripts/DataVisualizer.cs" />
+      <File FileName="Assets/Unity3DGlobe/Scripts/DataLoader.cs" />
+      <File FileName="Assets/Unity3DGlobe/Scripts/VisualData.cs" Line="70" Column="32" />
       <File FileName="Assets/Scripts/DataOverview.cs" Line="23" Column="1" NotebookId="1" />
     </Files>
     <Pads>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="da113565-eaf5-48ca-bd73-2c604d3adc30" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b92af670-32b0-4402-bf2c-6f514482a510" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

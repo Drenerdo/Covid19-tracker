@@ -1,10 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VisualData : MonoBehaviour
 {
+    [Header("All Data")]
     public string jsonURL = "";
+
+    [Header("Confimed Data")]
+    public string confirmedURL = "";
+
+    [Header("Confimed Data")]
+    public string casualtyDataURL = "";
+
+
+    [Header("Data Layout")]
+    public Text latest_label;
+    public Text country_label;
+    public Text province_label;
+
 
     void Start()
     {
@@ -45,6 +60,21 @@ public class VisualData : MonoBehaviour
             Debug.Log(l.latest);
             Debug.Log(l.country);
             Debug.Log(l.province);
+
+            //latest_label.text = l.latest.ToString();
+
+            //country_label.text = l.country.ToString();
+
+            //province_label.text = l.province.ToString();
+
+            if(l.country == "US")
+            {
+                latest_label.text = l.latest.ToString();
+
+                country_label.text = l.country.ToString();
+
+                province_label.text = l.province.ToString();
+            }
         }
 
     }
