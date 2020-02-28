@@ -3,10 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using UnityEngine.UI;
 
 public class DataVisual : MonoBehaviour
 {
-    public string jsonURL = "";
+    [Header("")]
+    public string confirmedData = "";
+
+    [Header("")]
+    public string casualityData = "";
+
+    [Header("")]
+    public string allData = "";
+
+    [Header("")]
+    public Text countryText;
+    public Text latestText;
+    public Text provinceText;
+
 
     void Start()
     {
@@ -17,7 +31,7 @@ public class DataVisual : MonoBehaviour
     {
         Debug.Log("Parsing your data!");
 
-        WWW _www = new WWW(jsonURL);
+        WWW _www = new WWW(confirmedData);
         yield return _www;
         if(_www.error == null)
         {
@@ -41,6 +55,13 @@ public class DataVisual : MonoBehaviour
             Debug.Log(l.latest);
             Debug.Log(l.country);
             Debug.Log(l.province);
+
+            if (l.country == "US" && l.province == "")
+            {
+                countryText.text = l.country.ToString();
+                latestText.text = l.latest.ToString();
+                provinceText.text = l.province.ToString();
+            }
         }
 
         //foreach(confirmed c in dataOverview.confirmed)

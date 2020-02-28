@@ -15,6 +15,7 @@ public class DataOverview
 [Serializable]
 public class Location
 {
+    //public Coordinates coordinates;
     public string country;
     public int latest;
     public string province;
