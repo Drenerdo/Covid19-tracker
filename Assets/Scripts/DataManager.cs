@@ -9,6 +9,8 @@ using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
+    public static DataManager _instance;
+
     void Start()
     {
         StartCoroutine(getCurrent());
@@ -77,6 +79,8 @@ public class DataManager : MonoBehaviour
                 Debug.Log(" Here are the recovered cases " + totalData.recovered);
                 Debug.Log(" Here are the casualities " + totalData.deaths);
 
+
+
                 //DataTypeVisualizer dataType = JsonUtility.FromJson<DataTypeVisualizer>(jsonResult);
             }
         }
@@ -126,7 +130,7 @@ public class DataManager : MonoBehaviour
                 string jsonResult = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
                 Debug.Log(jsonResult);
 
-                DataTypeVisualizer dataType = JsonUtility.FromJson<DataTypeVisualizer>(jsonResult);
+                //DataTypeVisualizer dataType = JsonUtility.FromJson<DataTypeVisualizer>(jsonResult);
 
                 //Debug.Log(dataType.recovered);
                 //Debug.Log(dataType.dt);

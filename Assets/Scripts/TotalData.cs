@@ -7,9 +7,9 @@ using System.IO;
 [Serializable]
 public class TotalData
 {
-    public int confirmed { get; set; }
-    public int deaths { get; set; }
-    public int recovered { get; set; }
-    public string dt { get; set; }
-    public double ts { get; set; }
+    public int confirmed;
+    public int deaths;
+    public int recovered;
+    public string dt;
+    public double ts;
 }

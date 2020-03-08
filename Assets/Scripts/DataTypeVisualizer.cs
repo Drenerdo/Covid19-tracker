@@ -110,6 +110,7 @@ public class DataTypeVisualizer
     public double ts;
 }
 
+[Serializable]
 public class MainlandChina
 {
     public int confirmed { get; set; }
