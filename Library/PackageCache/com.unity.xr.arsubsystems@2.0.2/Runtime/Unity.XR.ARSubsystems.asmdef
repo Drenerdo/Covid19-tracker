@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.XR.ARSubsystems",
     "references": [
@@ -11,4 +12,19 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": []
+=======
+{
+    "name": "Unity.XR.ARSubsystems",
+    "references": [
+        "Unity.Subsystem.Registration"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+>>>>>>> origin/develop
 }

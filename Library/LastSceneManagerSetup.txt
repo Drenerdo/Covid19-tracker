@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/coronavirus_bio_scene.unity
+=======
+- path: Assets/Scenes/COVID19-Map-Data.unity
+>>>>>>> origin/develop
   isLoaded: 1
   isActive: 1
   isSubScene: 0
