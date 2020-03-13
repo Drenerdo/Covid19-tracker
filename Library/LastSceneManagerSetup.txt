@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/coronavirus_bio_scene.unity
 =======
 - path: Assets/Scenes/COVID19-Map-Data.unity
 >>>>>>> origin/develop
+=======
+- path: Assets/Scenes/testing_environment_scene.unity
+>>>>>>> 50753c44a5a54eac42bf4690a47dbf66e15da077
   isLoaded: 1
   isActive: 1
   isSubScene: 0

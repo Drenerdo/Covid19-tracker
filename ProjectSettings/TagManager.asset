@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - total_data_display_label
+  - casuality_data_display_label
+  - confirmed_data_display_label
+  - recovered_data_display_label
+  - causalty_data_display_label
   layers:
   - Default
   - TransparentFX

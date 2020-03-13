@@ -7,6 +7,7 @@
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.ugui": "1.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "com.unity.xr.magicleap": "3.0.0-preview.12",
     "com.unity.xr.management": "3.0.3",
 =======
@@ -14,6 +15,11 @@
     "com.unity.xr.arfoundation": "2.0.2",
     "com.unity.xr.arkit": "2.0.1",
 >>>>>>> origin/develop
+=======
+    "com.unity.xr.arcore": "2.1.2",
+    "com.unity.xr.arfoundation": "2.1.4",
+    "com.unity.xr.arkit": "2.1.2",
+>>>>>>> 50753c44a5a54eac42bf4690a47dbf66e15da077
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

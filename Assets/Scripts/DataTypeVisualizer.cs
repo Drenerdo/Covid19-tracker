@@ -113,9 +113,9 @@ public class DataTypeVisualizer
 [Serializable]
 public class MainlandChina
 {
-    public int confirmed { get; set; }
-    public int deaths { get; set; }
-    public int recovered { get; set; }
+    public int confirmed;
+    public int deaths;
+    public int recovered;
 }
 
 public class SouthKorea
