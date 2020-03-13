@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using UnityEngine.UI;
 
-public class DataManager : MonoBehaviour
+public class DataManager : DataDisplayController
 {
     public static DataManager _instance;
 
@@ -19,6 +19,12 @@ public class DataManager : MonoBehaviour
         StartCoroutine(getCountries());
 
         StartCoroutine(getImage());
+
+        // For Text display
+        total_count_display = GameObject.FindGameObjectWithTag("total_data_display_label").GetComponent<Text>();
+        confirmed_count_display = GameObject.FindGameObjectWithTag("confirmed_data_display_label").GetComponent<Text>();
+        recovered_count_display = GameObject.FindGameObjectWithTag("recovered_data_display_label").GetComponent<Text>();
+        causalty_count_display = GameObject.FindGameObjectWithTag("causalty_data_display_label").GetComponent<Text>();
 
     }
 
@@ -79,6 +85,9 @@ public class DataManager : MonoBehaviour
                 Debug.Log(" Here are the recovered cases " + totalData.recovered);
                 Debug.Log(" Here are the casualities " + totalData.deaths);
 
+                total_count_display.text = totalData.confirmed.ToString();
+                
+
 
 
                 //DataTypeVisualizer dataType = JsonUtility.FromJson<DataTypeVisualizer>(jsonResult);
@@ -108,6 +117,15 @@ public class DataManager : MonoBehaviour
 
                 DataTypeVisualizer dataType = JsonUtility.FromJson<DataTypeVisualizer>(jsonResult);
                 Debug.Log("Getting current data!");
+
+                Debug.Log(dataType.Mainland_China);
+
+                foreach(MainlandChina china in dataType.Mainland_China)
+                {
+                    Debug.Log("Confirmed from china" + china.confirmed);
+                    Debug.Log("Deaths from china" + china.deaths);
+                    Debug.Log("Recovered from china" + china.recovered);
+                }
             }
         }
     }
